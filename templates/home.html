@@ -1,0 +1,21 @@
+{%extends 'base.html'%} {% block contentA %}
+<body style="overflow: hidden !important">
+  <!-- Header Start -->
+  <header class="masthead text-white text-center" id="masterhead">
+    <!-- Overlay From Base Start -->
+    <div class="overlay"></div>
+    <!-- Overlay From Base End -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="display-3 text-center mb-3">PERBANDINGAN ALGORITMA NAÏVE BAYES DAN SUPPORT VECTOR MACHINE</h1>
+        </div>
+        <br /><br /><br /><br /><br />
+      </div>
+    </div>
+  </header>
+  <script src="{{url_for('static',filename='js/home.js')}}"></script>
+
+  <!-- Header End -->
+  {% endblock contentA %}
+</body>

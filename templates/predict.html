@@ -1,0 +1,47 @@
+{%extends 'base.html'%}{%block contentC%}
+<table>
+<div id="container-news" class="container pt-2">
+  <!-- Title Start -->
+  <h1 class="mb-1 title-news-feed">
+    <b> Uji Perbandingan Algoritma</b>
+  </h1>
+  <!-- Title End -->
+  <br /><br /><br /><br />
+  <div id="card_container" class="row">
+    <div class='container'>
+      <p>The text you entered:</p>
+      <p>{{ text }}</p>
+      {% if predmnb == 1%}
+      
+      <p class='no_trust'>Hasil Prediksi Naive Bayes = NONHOAX / REAL.
+        <br>
+        <br> Probability of {{ probamnb }}
+      </p>
+      
+      {% elif predmnb == 0%}
+      <p class='trust'>Hasil Prediksi Naive Bayes = HOAX / FAKE.
+        <br>
+        <br> Probability of {{ probamnb }}
+      </p>
+
+      {% endif %}
+      {% if predsvc == 1%}
+      
+      <p class='no_trust'>Hasil Prediksi Support Vector Machine = NONHOAX / REAL.
+        <br>
+        <br> Probability of {{ probasvc }}
+      </p>
+      
+      {% elif predsvc == 0%}
+      <p class='trust'>Hasil Prediksi Support Vector Machine = HOAX / FAKE.
+        <br>
+        <br> Probability of {{ probasvc }}
+      </p>
+
+      {% endif %}
+     </div>
+  </div>
+</div>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+{%endblock contentC%}

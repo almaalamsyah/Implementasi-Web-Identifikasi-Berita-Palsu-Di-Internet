@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERBANDINGAN ALGORITMA NAÏVE BAYES DAN SUPPORT VECTOR MACHINE PADA IDENTIFIKASI BERITA PALSU DI INTERNET</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='assets/logodarks.jpeg') }}"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+      ~
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS file -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='css/main.css')}}"
+    />
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="dist/simple-notify.min.css" />
+    <script src="dist/simple-notify.min.js"></script>
+  </head>
+
+  <body id="body">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-diff" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{{url_for('home')}}"
+          ><img
+            src="{{ url_for('static', filename='assets/newlogo.png') }}"
+            class="logo"
+            id="logo"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Link Start -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('home')}}"
+                ><div class="font-navbar" id="font-navbar">Home</div></a
+              >
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('uji')}}"
+                ><div class="font-navbar" id="font-navbar">Uji</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Link End -->
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Change Display Start -->
+    {% block contentA %} {% endblock contentA %} {% block contentB %} {%
+    endblock contentB %} {% block contentC %} {% endblock contentC %} {% block
+    contentD %} {% endblock contentD %}
+    <!-- Change Display End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{%extends 'base.html'%}{%block contentC%}
+<table>
+<div id="container-news" class="container pt-2">
+  <!-- Title Start -->
+  <h1 class="mb-1 title-news-feed">
+    <b> Uji Perbandingan Algoritma</b>
+  </h1>
+  <!-- Title End -->
+  <br /><br /><br /><br />
+  <div id="card_container" class="row">
+    <div class='container'>
+      <form action="/predict" method="POST">
+       <div class="col-three-forth text-center col-md-offset-2">
+        <div class="form-group">
+         <textarea class="form-control jTextarea mt-3" id="jTextarea'" rows="5" name="text"
+          placeholder="Write your text here..." required>{{text}}</textarea>
+          <br /><br /><br />
+         <button class="btn btn-primary btn-outline btn-md" type="submit" name="predict">Predict</button>
+        </div>
+       </div>
+      </form>
+     </div>
+  </div>
+</div>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+{%endblock contentC%}
